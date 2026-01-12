@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number">
+    <input type="number">
+    <input type="number">
+    <input type="number">
+    <input type="number">
+
+    <button id="btn">Remove duplicates</button>
+    <p id="result"></p>
+
+    <script>
+
+        function ReverseOrder(){
+            let inputs = Array.from(document.getElementsByTagName("input"));
+            let result = document.getElementById("result");
+            
+            // Extract values from inputs
+            let values = inputs.map(input => input.value);
+
+            let unique = [];
+            for(let val of values){
+                if(!unique.includes(val)){
+                    unique.push(val);
+                }
+            }
+           // Display result 
+           result.innerText = unique.join(", ");
+            
+
+        }
+        document.getElementById("btn").addEventListener("click",ReverseOrder);
+    </script>
+</body>
+</html>

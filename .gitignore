@@ -1,0 +1,18 @@
+.vscode/
+node_modules/
+.env
+
+AppData/
+Application Data/
+Contacts/
+Cookies/
+CrossDevice/
+Downloads/
+Favorites/
+Links/
+Music/
+NTUSER.*
+OneDrive/
+VirtualBox*
+*.log
+*.tmp
